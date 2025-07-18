@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desalinated Water Vending Machine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Desalinated Water Vending Machine</h1>
+    <p>Clean water for a healthier future</p>
+  </header>
+
+  <main class="main-content">
+    <section class="vending-section">
+      <h2>Insert Coin or Swipe Card</h2>
+      <div class="actions">
+        <button onclick="insertCoin()">💰 Insert Coin</button>
+        <button onclick="insertCard()">💳 Swipe Card</button>
+      </div>
+      <p class="status">Status: <span id="status">Awaiting user action...</span></p>
+
+      <div id="process" class="hidden">
+        <h3>Purification Process</h3>
+        <ul class="steps">
+          <li id="step1">1. Water Source</li>
+          <li id="step2">2. Pre-treatment Filters</li>
+          <li id="step3">3. Reverse Osmosis</li>
+          <li id="step4">4. UV Purification</li>
+          <li id="step5">5. Storage Tank</li>
+          <li id="step6">6. Dispensing Unit</li>
+        </ul>
+        <button onclick="dispense()">🚰 Dispense Water</button>
+      </div>
+
+      <p id="result" class="result hidden">✅ Water dispensed! Stay hydrated 💧</p>
+    </section>
+
+    <section class="info-section">
+      <h2>Why This Machine?</h2>
+      <ul>
+        <li>✅ Safe drinking water in remote areas</li>
+        <li>✅ Reduces plastic waste</li>
+        <li>✅ Automated and scalable</li>
+        <li>✅ Solar & IoT integration ready</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 WaterTech Solutions | Powered by CleanTech</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
